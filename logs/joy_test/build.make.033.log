@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target joy_test_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/joy_test_node.dir/src/joy_test_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/yoshi/joy_test_ws/devel/.private/joy_test/lib/joy_test/joy_test_node[0m
+[100%] Built target joy_test_node
