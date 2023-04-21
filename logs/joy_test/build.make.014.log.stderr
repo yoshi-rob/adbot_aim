@@ -1,0 +1,4 @@
+make[2]: *** ターゲット 'CMakeFiles/aim_pole.dir/build' を make するルールがありません.  中止.
+make[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/aim_pole.dir/all] エラー 2
+make[1]: *** 未完了のジョブを待っています....
+make: *** [Makefile:141: all] エラー 2

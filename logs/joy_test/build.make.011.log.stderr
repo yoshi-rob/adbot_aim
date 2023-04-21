@@ -1,0 +1,41 @@
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:11:1:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kvoid[m[K’
+   11 | [01;31m[Kvoid[m[K joy_callback(const sensor_msgs::Joy &joy_msg)
+      | [01;31m[K^~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:30:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoy_callback[m[K’ was not declared in this scope
+   30 |   ros::Subscriber sub_joy = nh.subscribe("joy", 10, [01;31m[Kjoy_callback[m[K);
+      |                                                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_aim[m[K’ was not declared in this scope
+   31 |   [01;31m[Kpub_aim[m[K = nh.advertise<std_msg::Float64>("aim",10);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs[m[K’?
+   31 |   pub_aim = nh.advertise<[01;31m[Kstd_msg[m[K::Float64>("aim",10);
+      |                          [01;31m[K^~~~~~~[m[K
+      |                          [32m[Kstd_msgs[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:16:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   31 |   pub_aim = nh.[01;31m[Kadvertise<std_msg::Float64>[m[K("aim",10);
+      |                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(const char [4], int)[m[K’
+   31 |   pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |   pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:31:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   31 |   pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                    [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/joy_test_node.dir/build.make:63: CMakeFiles/joy_test_node.dir/src/joy_test_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/joy_test_node.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

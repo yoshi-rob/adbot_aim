@@ -1,0 +1,72 @@
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:4:11:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64MultiArray[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+    4 | std_msgs::[01;31m[KFloat64MultiArray[m[K aim_list;
+      |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:5:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_list[m[K’ does not name a type
+    5 | [01;31m[Kaim_list[m[K.data = [0, 30, 60, 90];
+      | [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:6:11:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+    6 | std_msgs::[01;31m[KFloat64[m[K aim;
+      |           [01;31m[K^~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:[m[K In function ‘[01m[Kvoid joy_callback(const Joy&)[m[K’:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:14:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim[m[K’ was not declared in this scope
+   14 |   if(joy_msg.buttons[0]==1) [01;31m[Kaim[m[K.data = aim_list.data[0];
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:14:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_list[m[K’ was not declared in this scope
+   14 |   if(joy_msg.buttons[0]==1) aim.data = [01;31m[Kaim_list[m[K.data[0];
+      |                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:15:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim[m[K’ was not declared in this scope
+   15 |   if(joy_msg.buttons[1]==1) [01;31m[Kaim[m[K.data = aim_list.data[1];
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:15:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_list[m[K’ was not declared in this scope
+   15 |   if(joy_msg.buttons[1]==1) aim.data = [01;31m[Kaim_list[m[K.data[1];
+      |                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:16:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim[m[K’ was not declared in this scope
+   16 |   if(joy_msg.buttons[2]==1) [01;31m[Kaim[m[K.data = aim_list.data[2];
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:16:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_list[m[K’ was not declared in this scope
+   16 |   if(joy_msg.buttons[2]==1) aim.data = [01;31m[Kaim_list[m[K.data[2];
+      |                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:17:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim[m[K’ was not declared in this scope
+   17 |   if(joy_msg.buttons[3]==1) [01;31m[Kaim[m[K.data = aim_list.data[3];
+      |                             [01;31m[K^~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:17:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim_list[m[K’ was not declared in this scope
+   17 |   if(joy_msg.buttons[3]==1) aim.data = [01;31m[Kaim_list[m[K.data[3];
+      |                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:19:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_aim[m[K’ was not declared in this scope
+   19 |   [01;31m[Kpub_aim[m[K.publish(aim);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:19:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kaim[m[K’ was not declared in this scope
+   19 |   pub_aim.publish([01;31m[Kaim[m[K);
+      |                   [01;31m[K^~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:27:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd_msgs[m[K’?
+   27 |   ros::Publisher pub_aim = nh.advertise<[01;31m[Kstd_msg[m[K::Float64>("aim",10);
+      |                                         [01;31m[K^~~~~~~[m[K
+      |                                         [32m[Kstd_msgs[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:27:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   27 |   ros::Publisher pub_aim = nh.[01;31m[Kadvertise<std_msg::Float64>[m[K("aim",10);
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:27:67:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<<expression error> >(const char [4], int)[m[K’
+   27 |   ros::Publisher pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                                   [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)[m[K’
+  249 |     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+      |               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:27:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   27 |   ros::Publisher pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                                   [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)[m[K’
+  315 |   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+      |             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/yoshi/joy_test_ws/src/joy_test/src/joy_test_node.cpp:27:67:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   27 |   ros::Publisher pub_aim = nh.advertise<std_msg::Float64>("aim",10[01;31m[K)[m[K;
+      |                                                                   [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/joy_test_node.dir/build.make:63: CMakeFiles/joy_test_node.dir/src/joy_test_node.cpp.o] エラー 1
+make[1]: *** [CMakeFiles/Makefile2:155: CMakeFiles/joy_test_node.dir/all] エラー 2
+make: *** [Makefile:141: all] エラー 2

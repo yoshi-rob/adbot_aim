@@ -1,0 +1,4 @@
+CMake Error: Cannot determine link language for target "aim_pole".
+CMake Error: CMake can not determine linker language for target: aim_pole
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:574: cmake_check_build_system] エラー 1

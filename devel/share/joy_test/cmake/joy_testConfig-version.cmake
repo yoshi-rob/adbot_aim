@@ -1,0 +1,1 @@
+/home/yoshi/joy_test_ws/devel/.private/joy_test/share/joy_test/cmake/joy_testConfig-version.cmake

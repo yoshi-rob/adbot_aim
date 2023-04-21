@@ -1,0 +1,1 @@
+/home/yoshi/joy_test_ws/devel/.private/joy_test/lib/pkgconfig/joy_test.pc

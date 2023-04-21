@@ -1,0 +1,8 @@
+prefix=/home/yoshi/joy_test_ws/install
+
+Name: joy_test
+Description: Description of joy_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
